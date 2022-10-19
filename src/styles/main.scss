@@ -1,7 +1,23 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "calculate";
 
-body {
-  background: $c-gray;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: #0d0d0d;
+  font-family: "HelveticaNeue";
+}
+
+.margin-5 {
+  margin: 0 0 5px;
+}
+
+.margin-16 {
+  margin: 0 0 16px;
+}
+
+.margin-30 {
+  margin: 0 0 30px;
 }

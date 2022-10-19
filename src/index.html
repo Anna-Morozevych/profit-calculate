@@ -7,7 +7,104 @@
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <div class="calculate">
+      <div class="calculate__title-box">
+        <h2 class="calculate__title margin-5">Calculate how more more profit</h2>
+        <h2 class="calculate__title">Frate puts in your pocket.</h2>
+      </div>
+      <form class="calculate__form" id="form">
+        <div class="calculate__grid">
+          <div class="calculate__item calculate__left">
+            <span class="calculate__label margin-30">Number of Returns Per Year</span>
+            <output
+              class="calculate__current-value"
+              for="numberOfReturns"
+              id="returnVolume"
+            >
+              100
+            </output>
+            <input
+              name="numberOfReturns"
+              type="range"
+              class="calculate__range"
+              min="100"
+              max="25000"
+              step="100"
+              value="100"
+              id="numberOfReturns"
+            >
+            <div class="calculate__numbers">
+              <span class="calculate__number">100</span>
+              <span class="calculate__number">25,000+</span>
+            </div>
+          </div>
+  
+          <div class="calculate__item calculate__right">
+            <span class="calculate__label margin-16">Do you offer free returns?</span>
+            <select
+              class="calculate__select"
+              name="returns" 
+              id="returns"
+            >
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+  
+          <div class="calculate__item calculate__left">
+            <span class="calculate__label margin-30">Average Item Value</span>
+            <output
+              class="calculate__current-value"
+              for="average"
+              id="averageVolume"
+            >
+              10
+            </output>
+            <input
+              name="average"
+              type="range"
+              class="calculate__range"
+              min="10"
+              max="300"
+              step="10"
+              value="10"
+              id="average"
+            >
+  
+            <div class="calculate__numbers">
+              <span class="calculate__number">$10</span>
+              <span class="calculate__number">$300+</span>
+            </div>
+          </div>
+  
+          <div class="calculate__item calculate__right">
+            <span class="calculate__label margin-16">Do you offer free outbound shipping?</span>
+            <select
+              class="calculate__select"
+              name="shipping" 
+              id="shipping"
+            >
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="calculate__button" type="submit">
+          <span class="calculate__button-text">
+            Calculate
+          </span>
+        </button>
+
+        <div class="calculate__increase">
+          <span class="calculate__increase-title">
+            Annual Profit Increase
+          </span>
+          <div class="calculate__increase-result"></div>
+        </div>
+        </div>
+      </form>
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
